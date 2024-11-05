@@ -1,5 +1,5 @@
-import com.pafable.utils.PipelineArgs
+import com.pafable.utils.PipelineArgs.taskNames
 
 def call() {
-    return PipelineArgs.taskNames
+    return taskNames
 }
