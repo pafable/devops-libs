@@ -1,6 +1,6 @@
 package com.pafable
 
-class PipelineParams {
+class PipelineArgs {
     public final ArrayList<String> taskNames = [
         'create',
         'destroy'
