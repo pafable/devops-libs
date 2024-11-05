@@ -6,7 +6,7 @@ class PipelineArgs {
         'destroy'
     ]
 
-    public static final string taskDesc = 'Create or destroy actions'
+    public static final String taskDesc = 'Create or destroy actions'
 
-    public static final string taskName = 'ACTIONS'
+    public static final String taskName = 'ACTIONS'
 }
