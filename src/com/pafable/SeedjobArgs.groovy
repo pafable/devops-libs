@@ -55,11 +55,11 @@ enum seedjobArgs {
         'refs/heads/master'
     )
 
-    final String name
-    final String desc
-    final String path
-    final String repo
-    final String branch
+    public static final String name
+    public static final String desc
+    public static final String path
+    public static final String repo
+    public static final String branch
 
     seedjobArgs(
         final String name,
