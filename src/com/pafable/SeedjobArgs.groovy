@@ -61,7 +61,7 @@ enum SeedjobArgs {
     final String repo
     final String branch
 
-    seedjobArgs(
+    SeedjobArgs(
         final String name,
         final String desc,
         final String path,
