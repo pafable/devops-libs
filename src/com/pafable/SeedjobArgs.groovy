@@ -9,8 +9,8 @@ enum seedjobArgs {
         'apps-deployer',
         'Apps deployer',
         'cicd/apps/Jenkinsfile',
-        platformRepo,
-        platformBranch
+        'https://github.com/pafable/k8s-platform.git',
+        'refs/heads/master'
     ),
     DISCORD_BOT_BUILDER(
         'discord-bot-builder',
@@ -23,36 +23,36 @@ enum seedjobArgs {
         'dns-updater',
         'Updates DNS records',
         'cicd/dns/Jenkinsfile',
-        platformRepo,
-        platformBranch
+        'https://github.com/pafable/k8s-platform.git',
+        'refs/heads/master'
     ),
     JENKINS_AGENT_BUILDER(
         'jenkins-agent-builder',
         'Jenkins agent builder',
         'cicd/agent-builder/Jenkinsfile',
-        platformRepo,
-        platformBranch
+        'https://github.com/pafable/k8s-platform.git',
+        'refs/heads/master'
     ),
     K3S_INFRA_FACTORY(
         'k3s-infra-factory',
         'Builds k3s infra',
         'cicd/k3s/Jenkinsfile',
-        platformRepo,
-        platformBranch
+        'https://github.com/pafable/k8s-platform.git',
+        'refs/heads/master'
     ),
     PACKY(
         'packy',
         'Builds images with Hashicorp Packer',
         'cicd/packy/Jenkinsfile',
-        platformRepo,
-        platformBranch
+        'https://github.com/pafable/k8s-platform.git',
+        'refs/heads/master'
     ),
     RPM_SERVER(
         'rpm-server',
         'Builds rpm server infra',
         'cicd/rpm-srv/Jenkinsfile',
-        platformRepo,
-        platformBranch
+        'https://github.com/pafable/k8s-platform.git',
+        'refs/heads/master'
     )
 
     final String name
