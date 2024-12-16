@@ -1,8 +1,11 @@
 package com.pafable
 
+import groovy.transform.TypeChecked
+
 final String platformBranch = 'refs/heads/master'
 final String platformRepo = 'https://github.com/pafable/k8s-platform.git'
 
+@TypeChecked
 enum SeedjobArgs {
     APPS_DEPLOYER(
         'apps-deployer',
