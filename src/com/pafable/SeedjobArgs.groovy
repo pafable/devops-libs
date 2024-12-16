@@ -54,7 +54,6 @@ enum SeedjobArgs {
         platformBranch
     )
 
-
     final String name
     final String desc
     final String path
@@ -67,7 +66,8 @@ enum SeedjobArgs {
         final String path,
         final String repo,
         final String branch
-    ) {
+    )
+    {
         this.name = name
         this.desc = desc
         this.path = path
