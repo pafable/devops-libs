@@ -75,4 +75,24 @@ enum seedjobArgs {
         this.repo = repo
         this.branch = branch
     }
+
+    String getName() {
+        return this.name
+    }
+
+    String getDesc() {
+        return this.desc
+    }
+
+    String getPath() {
+        return this.path
+    }
+
+    String getRepo() {
+        return this.repo
+    }
+
+    String getBranch() {
+        return this.branch
+    }
 }
