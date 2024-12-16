@@ -4,7 +4,7 @@ package com.pafable
 final String platformBranch = 'refs/heads/master'
 final String platformRepo = 'https://github.com/pafable/k8s-platform.git'
 
-enum seedjobArgs {
+enum SeedjobArgs {
     APPS_DEPLOYER(
         'apps-deployer',
         'Apps deployer',
