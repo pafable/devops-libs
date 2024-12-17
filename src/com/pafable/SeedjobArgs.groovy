@@ -1,10 +1,6 @@
 package com.pafable
 
-
-final String platformBranch = 'refs/heads/master'
-final String platformRepo = 'https://github.com/pafable/k8s-platform.git'
-
-enum SeedjobArgs {
+enum LolSeedjobArgs {
     APPS_DEPLOYER(
         'apps-deployer',
         'Apps deployer',
@@ -61,12 +57,12 @@ enum SeedjobArgs {
     final String repo
     final String branch
 
-    SeedjobArgs(
-        String name,
-        String desc,
-        String path,
-        String repo,
-        String branch
+    LolSeedjobArgs(
+        final String name,
+        final String desc,
+        final String path,
+        final String repo,
+        final String branch
     ) {
         this.name = name
         this.desc = desc
