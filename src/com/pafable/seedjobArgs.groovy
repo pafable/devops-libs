@@ -1,6 +1,6 @@
 package com.pafable
 
-enum LolSeedjobArgs {
+enum SeedjobArgs {
     APPS_DEPLOYER(
         'apps-deployer',
         'Apps deployer',
@@ -57,7 +57,7 @@ enum LolSeedjobArgs {
     final String repo
     final String branch
 
-    LolSeedjobArgs(
+    SeedjobArgs(
         final String name,
         final String desc,
         final String path,
