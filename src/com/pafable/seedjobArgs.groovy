@@ -72,8 +72,6 @@ enum SeedjobArgs {
     }
 
     public String getPrettyName() {
-        return this.name
+        return "pafable-${this.name}"
     }
-
-
 }
