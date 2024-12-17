@@ -71,7 +71,7 @@ enum SeedjobArgs {
         this.branch = branch
     }
 
-    public static String getPrettyName() {
+    public String getPrettyName() {
         return this.name
     }
 
