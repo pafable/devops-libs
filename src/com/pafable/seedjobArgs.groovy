@@ -70,4 +70,10 @@ enum SeedjobArgs {
         this.repo = repo
         this.branch = branch
     }
+
+    public static String getPrettyName() {
+        return this.name
+    }
+
+
 }
