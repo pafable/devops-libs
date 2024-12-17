@@ -62,13 +62,12 @@ enum SeedjobArgs {
     final String branch
 
     SeedjobArgs(
-        final String name,
-        final String desc,
-        final String path,
-        final String repo,
-        final String branch
-    )
-    {
+        String name,
+        String desc,
+        String path,
+        String repo,
+        String branch
+    ) {
         this.name = name
         this.desc = desc
         this.path = path
