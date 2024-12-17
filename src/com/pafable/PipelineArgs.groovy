@@ -1,7 +1,7 @@
 package com.pafable
 
 class PipelineArgs {
-    public static final ArrayList<String> taskActions = [
+    public static final List<String> taskActions = [
         'create',
         'destroy'
     ]
