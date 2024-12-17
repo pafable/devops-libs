@@ -1,3 +1,5 @@
+// Keep the name of this file starting in lowercase!
+
 package com.pafable
 
 enum SeedjobArgs {
