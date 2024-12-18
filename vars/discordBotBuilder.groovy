@@ -1,8 +1,9 @@
-def call() {
+def call(final Closure body) {
     final String tag = 'debug'
     final String dockerHubUser = 'boomb0x'
     final String appName = 'discord-bot-3'
     final String appVersion = '0.0.1'
+    final String destination = "${dockerHubUser}/${appName}:${appVersion}"
 
     pipeline {
         agent {
