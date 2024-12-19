@@ -5,6 +5,9 @@ def call(final Closure body) {
     final String appVersion = '0.0.1'
     final String destination = "${dockerHubUser}/${appName}:${appVersion}"
 
+    body.resolveStrategy = Closure.DELEGATE_FIRST
+    body()
+
     pipeline {
         agent {
             kubernetes {
@@ -51,8 +54,8 @@ def call(final Closure body) {
                             #!/busybox/sh
 
                             /kaniko/executor --context `pwd` \
-                                --dockerfile=Dockerfile \
-                                --destination ${dockerHubUser}/${appName}:${appVersion}
+                                --dockerfile=${body.dockerFilePath} \
+                                --destination ${destination}
                         """
                     }
                 }
