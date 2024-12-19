@@ -1,12 +1,10 @@
 def call(final Closure body) {
-    final String tag = 'debug'
-    final String dockerHubUser = 'boomb0x'
-    final String appName = 'discord-bot-3'
-    final String appVersion = '0.0.1'
-    final String destination = "${dockerHubUser}/${appName}:${appVersion}"
-
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body()
+
+    final String tag = 'debug'
+    final String dockerHubUser = 'boomb0x'
+    final String destination = "${dockerHubUser}/${body.appName}:${body.appVersion}"
 
     pipeline {
         agent {
