@@ -47,7 +47,10 @@ def call(final Closure body) {
         stages {
             stage('building image') {
                 steps {
-                    container(name: 'kaniko', shell: '/busybox/sh') {
+                    container(
+                        name: 'kaniko',
+                        shell: '/busybox/sh'
+                    ) {
                         sh """
                             #!/busybox/sh
 
