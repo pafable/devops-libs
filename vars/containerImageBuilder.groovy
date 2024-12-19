@@ -2,7 +2,7 @@ def call(final Closure body) {
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body()
 
-    final String tag = 'debug'
+    final String tag = 'debug' // kaniko tag needs to be debug for it to work in jenkins
     final String dockerHubUser = 'boomb0x'
     final String destination = "${dockerHubUser}/${body.appName}:${body.appVersion}"
 
