@@ -5,7 +5,7 @@ def call(final Closure body) {
     final String tag = 'debug' // kaniko tag needs to be debug for it to work in jenkins
     final String dockerHubUser = 'boomb0x'
     final String destination = "${dockerHubUser}/${body.appName}:${body.appVersion}"
-    final String cronSchedule = body.cron ? body.cron : ""
+    final String cronSchedule = body.cron ? body.cron : null
 
     pipeline {
         agent {
