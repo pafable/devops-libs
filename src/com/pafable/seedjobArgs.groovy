@@ -27,7 +27,7 @@ enum SeedjobArgs {
     JENKINS_AGENT_BUILDER(
         'jenkins-agent-builder',
         'Jenkins agent builder',
-        'cicd/agent-builder/Jenkinsfile',
+        'cicd/jenkins-agent-builder/Jenkinsfile',
         'https://github.com/pafable/k8s-platform.git',
         'refs/heads/master'
     ),
