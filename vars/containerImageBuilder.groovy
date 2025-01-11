@@ -46,7 +46,7 @@ def call(final Closure body) {
         }
 
         triggers {
-            cron "${cronSchedule}"
+            cron("${cronSchedule}")
         }
 
         stages {
