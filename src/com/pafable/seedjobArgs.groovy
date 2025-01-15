@@ -24,6 +24,13 @@ enum SeedjobArgs {
         'https://github.com/pafable/k8s-platform.git',
         'refs/heads/master'
     ),
+    EKS_TERRAFORMER(
+        'eks-terraformer',
+        'EKS Terraformer',
+        'cicd/eks/Jenkinsfile',
+        'https://github.com/pafable/k8s-platform.git',
+        'refs/heads/master'
+    ),
     JENKINS_AGENT_BUILDER(
         'jenkins-agent-builder',
         'Jenkins agent builder',
