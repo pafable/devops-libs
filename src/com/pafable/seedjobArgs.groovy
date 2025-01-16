@@ -27,7 +27,7 @@ enum SeedjobArgs {
     EKS_TERRAFORMER(
         'eks-terraformer',
         'EKS Terraformer',
-        'cicd/eks/Jenkinsfile',
+        'cicd/aws/eks/Jenkinsfile',
         'https://github.com/pafable/k8s-platform.git',
         'refs/heads/master'
     ),
@@ -58,7 +58,14 @@ enum SeedjobArgs {
         'cicd/rpm-srv/Jenkinsfile',
         'https://github.com/pafable/k8s-platform.git',
         'refs/heads/master'
-    )
+    ),
+    VPC_TERRAFORMER(
+        'vpc-terraformer',
+        'AWS VPC Terraformer',
+        'cicd/aws/vpc/Jenkinsfile',
+        'https://github.com/pafable/k8s-platform.git',
+        'refs/heads/master'
+    ),
 
     final String name
     final String desc
