@@ -65,7 +65,7 @@ enum SeedjobArgs {
         'cicd/aws/vpc/Jenkinsfile',
         'https://github.com/pafable/k8s-platform.git',
         'refs/heads/master'
-    ),
+    )
 
     final String name
     final String desc
