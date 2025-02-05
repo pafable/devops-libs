@@ -37,6 +37,10 @@ def call(final Closure body) {
             }
         }
 
+        environment {
+            DOCKER_CRED = credentials('docker-hub-creds')
+        }
+
         options {
             ansiColor('xterm')
             timeout(
